@@ -140,10 +140,45 @@
     </header>
 
     <!-- Баннер -->
+    @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+svg {
+	font-family: "Russo One", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke <ya-tr-span data-index="86-1" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="4" data-translation="4" data-ch="0" data-type="trSpan" style="visibility: inherit !important;">4</ya-tr-span>s infinite alternate;
+	stroke-width: 2;
+	stroke: #1EA011;
+	font-size: <ya-tr-span data-index="58-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="100" data-translation="100" data-ch="0" data-type="trSpan" style="visibility: inherit !important;">100</ya-tr-span>px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(115,204,107,0); stroke: rgba(30,160,17,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(115,204,107,0); stroke: rgba(30,160,17,1); }
+	80%  {fill: rgba(115,204,107,0); stroke: rgba(30,160,17,1); stroke-width: 3; }
+	100% {
+		fill: rgba(115,204,107,1); stroke: rgba(30,160,17,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.wrapper {background-color: #064620};
+
+    <div class="wrapper">
+	<svg>
+		<text x="50%" y="50%" dy=".35em" text-anchor="middle">
+			погода
+		</text>
+	</svg>
+</div>
+    
     <section class="banner">
         <div class="container">
             <h1>Погода </h1>
-            <p>Мы предлагаем широкий ассортимент качественных товаров по доступным ценам с быстрой доставкой по всей стране.</p>
+            <p>Сайт погоды для вас</p>
             <a href="#" class="btn">В каталог</a>
         </div>
     </section>
@@ -153,15 +188,9 @@
         <div class="container">
 
             <img src="pok.jpg">
-            <h2 class="section-title">Популярные товары</h2>
-            <div class="product-grid">
-                <!-- Товар 1 -->
-                <div class="product-card">
-                    <div class="product-image">Изображение товара</div>
-                    <div class="product-info">
-                        <h3>Смартфон XYZ</h3>
-                        <p>Современный смартфон с отличной камерой и долгим временем работы.</p>
-                        <span class="price">25 990 ₽</span>
+            <h2 class="section-title">Свежие погодные новости</h2>
+            <div class="product-grid"
+                        <h3>Связаться с нами</h3>
                     </div>
                 </div>
                 
